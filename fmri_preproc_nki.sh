@@ -131,7 +131,6 @@ if ! [ -e ${proc_func_dir}/ants_out/${func_prefix}_mo_EPI2T1.nii.gz ]; then
 echo "ants reg..."
 mkdir -p $proc_func_dir/ants_out
 
-# this is done below - use the transform
 applywarp --ref=${proc_anat_dir}/T1_unifize.nii.gz --in=${proc_func_dir}/${func_prefix}_mo.nii.gz --out=${proc_func_dir}/ants_out/${func_prefix}_mo_EPI2T1.nii.gz \
 --postmat=${proc_func_dir}/oneVol_EPI2T1.mat
 
@@ -186,7 +185,6 @@ module load FSL/6.0.1-Python-3.7.2
 #Post-registration smoothing and nuisance regression
 # --------------------------
 
-#reminding code where afni is because it gave me an error that it forgot about it not sure why
 scripts_path="/data1/neurdylab/scripts/vu_meica_pipeline"
 afni_init="singularity exec --bind /data1:/data1 ${scripts_path}/afni_cmake_build_AFNI_21.1.03.sif"
 
