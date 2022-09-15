@@ -1,4 +1,4 @@
-function [OUT_p,REGS] = make_hcp_physio(po_wave,resp_wave,fs_phys,TR_s,nframes,DISP)
+function [OUT_p,REGS] = physio_preproc_hcp(po_wave,resp_wave,fs_phys,TR_s,nframes,DISP)
 %
 % function REGS = make_hcp_physio(po_wave,resp_wave,fs_phys,TR_sec,nframes);  
 % make regressors for hcp physio data
