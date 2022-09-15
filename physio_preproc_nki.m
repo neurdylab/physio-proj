@@ -1,8 +1,9 @@
-% Initial processing of NKI-RS physio data. Align with fMRI scan, extract
-% respiratory and cardiac measures. All variables in OUT_p are aligned to fMRI.
+% Initial processing of NKI-RS physio data. 
+% Extract low-frequency respiratory and cardiac measures. 
+% All output variables are aligned to the fMRI scan.
+%
 
-
-function physio_preproc_nki(sub_id, my_path)
+function [OUT_p, REGS] = physio_preproc_nki(sub_id, my_path)
 % function physio_preproc_nki(sub_id, my_path)
 % sub_id: NKI-RS subject ID (sub-A*)
 % my_path: path to save results
