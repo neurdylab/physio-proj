@@ -3,9 +3,9 @@
 NKI-RS Dataset:
 ================
 * List of subjects whose physiological data passed quality assurance checks
-* fMRI data preprocessing script
 * Physiological data preprocessing script
 * Physiological quality assurance tool 
+* fMRI data preprocessing script
 
 HCP Dataset:
 ================
